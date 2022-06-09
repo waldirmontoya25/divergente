@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: catalog-api
+  description: Retrieve Catalog Entities
+  type: openapi
+  lifecycle: production
+  owner: devsecops
+  system: Software-Catalog
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Catalog API
+      license:
+        name: Apache 2.0
+    servers:
+      - url: http://localhost:7007/api/catalog
+    paths:
+      /entities:
+        get:
+          summary: List all entities
