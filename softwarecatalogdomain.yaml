@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: Software-Catalog
+  description: Central Repository for Entities
+spec:
+  owner: devsecops
