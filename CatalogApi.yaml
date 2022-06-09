@@ -3,6 +3,7 @@ kind: API
 metadata:
   name: catalog-api
   description: Retrieve Catalog Entities
+spec:
   type: openapi
   lifecycle: production
   owner: devsecops
