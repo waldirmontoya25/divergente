@@ -1,13 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: divergente
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  name: divergente-component
+  description: divergente app foked from Backstage
+  tags:
+    - v1alpha1
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app=backstage'
 spec:
-  type: website
-  owner: john@example.com
-  lifecycle: experimental
+  type: service
+  lifecycle: production
+  owner: devsecops
+  system: divergentesystem
