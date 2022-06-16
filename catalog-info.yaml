@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: divergente-component
-  description: divergente app foked from Backstage
+  description: divergente app forked from Backstage
   tags:
     - v1alpha1
   annotations:

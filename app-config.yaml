@@ -126,7 +126,7 @@ kubernetes:
         - url: https://4D3F82F183B671474E2B43A661F7E167.gr7.us-east-2.eks.amazonaws.com
           name: devcluster01
           authProvider: 'aws'
-          #skipTLSVerify: false
+          #skipTLSVerify: true
           #skipMetricsLookup: true
           #dashboardUrl: http://127.0.0.1:64713 # url copied from running the command: minikube service kubernetes-dashboard -n kubernetes-dashboard
           #dashboardApp: eks
