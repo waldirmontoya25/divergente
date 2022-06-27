@@ -124,9 +124,12 @@ kubernetes:
     - type: 'config'
       clusters:
         - url: https://4D3F82F183B671474E2B43A661F7E167.gr7.us-east-2.eks.amazonaws.com
-          name: devcluster01
+          name: arn:aws:eks:us-east-2:960368310457:cluster/devcluster01
           authProvider: 'aws'
-          #skipTLSVerify: true
+          #ssumeRole: 'arn:aws:iam::960368310457:role/eksClusterRole'
+          #authProvider: 'serviceAccount'
+          #serviceAccountToken: 'k8s-aws-v1.aHR0cHM6Ly9zdHMuYW1hem9uYXdzLmNvbS8_QWN0aW9uPUdldENhbGxlcklkZW50aXR5JlZlcnNpb249MjAxMS0wNi0xNSZYLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFTSUE1N0dUSlBDNDNLUFVQV0gzJTJGMjAyMjA2MTYlMkZ1cy1lYXN0LTElMkZzdHMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIyMDYxNlQwMjE4MzZaJlgtQW16LUV4cGlyZXM9NjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JTNCeC1rOHMtYXdzLWlkJlgtQW16LVNlY3VyaXR5LVRva2VuPUlRb0piM0pwWjJsdVgyVmpFS0glMkYlMkYlMkYlMkYlMkYlMkYlMkYlMkYlMkYlMkZ3RWFDWFZ6TFdWaGMzUXRNU0pITUVVQ0lIc1JjM1RSSFlubnI2ZGNwTGNEeVVVTWVEWG50USUyRkNtUlo3aUhheTlVY0JBaUVBb0swT1lhVWJrTyUyRngyUTFMYldwUmglMkJMNzlyRmdjSEdObTZpeEZEU0JZdnNxcVFJSXF2JTJGJTJGJTJGJTJGJTJGJTJGJTJGJTJGJTJGJTJGQVJBQkdndzVOakF6Tmpnek1UQTBOVGNpRE9zUkZPSjAxV3M0ZktzQ3N5cjlBWDV5azAwMGd1Zjlsa29kZkN5Q25XcFNPakVUYkdMQkRYdDIwQUxJUEhrbGRvQ1MwMzhWYk5EZWdIc3pCQ1YybFJLdTd1QkFtdjN5ZDhGcFNGQmF1VjdDeUllbXhydUxCYTFMQiUyQmJhRmV2TEY3VUlPYSUyQmlZWUpvSUg5U09ITDlnS3VmcXlNMFQzNHZRY2N1MnVwbFVodVFNOXA5RkRta3dKcFo4T1d2cmtRc2FxRnJpUXg4UDMlMkJXbm13cWdpOXVUJTJGazJwZVk4JTJCeVRabnduWHBoMXg4Rks3RWRydThEcUlINVRwQVBNNms2VHRTZkJBcG1sYmw4dmNsNzZ2b0daMjVjZkdHVzVsNlV2c0JpeWklMkI0aUZ2WU5XVE9QM0k3T3d1M2MlMkZxRmdSc0htYTFrR21zVm8xV1pZQXNpM1B1amZIVkFnUjV2cEFkaTR1VU1KcW9uOHdxSkNvbFFZNm5RRWhNNGgzRzV0OXJQY21RRlZlNEVGcHlXWVdMa3RtVW8zQ0lsTjVuU2lsU1VybUtOVjRwc21SR0o0TGpLbWIwT2RYbmRBaDFSV1pGaFB0UlJJN0hZeEJmdUk2TVd5SFI5QlpadFluSzJPS3VLS0NDaFhmZU1ZajNnMnM1VHM4V0w1S1VSeWEzQyUyQkpCeTR5TVRQZG1XSWNJdU1OWFdHYk4lMkYzTXl4WmZtTjZRTHM4SnYwSmNMOSUyRkVzWWtxTkI1Y0xNcE53bEREMWxqWiUyQktPQkluMlMmWC1BbXotU2lnbmF0dXJlPTE2NmY3OGJmOGQ2YWI3MTcwM2JjZTUwN2ZkMmFlMzg5NDJmYWM4MmIwOTNhNDg5MmJkYmMzNDA5NTllODJmNmE'
+          skipTLSVerify: true
           #skipMetricsLookup: true
           #dashboardUrl: http://127.0.0.1:64713 # url copied from running the command: minikube service kubernetes-dashboard -n kubernetes-dashboard
           #dashboardApp: eks
