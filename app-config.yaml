@@ -125,8 +125,8 @@ kubernetes:
       clusters:
         - url: https://4D3F82F183B671474E2B43A661F7E167.gr7.us-east-2.eks.amazonaws.com
           name: arn:aws:eks:us-east-2:960368310457:cluster/devcluster01
-          authProvider: 'aws'
-          #assumeRole: 'arn:aws:iam::960368310457:role/eksClusterRole'
+          authProvider: 'serviceAccount'
+          serviceAccountToken: ${KUBERNETES_SERVICE_ACCOUNT_TOKEN}
           skipTLSVerify: true
         #- url: https://192.168.49.2:8443
         #  name: minikube
